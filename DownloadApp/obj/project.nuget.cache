@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+1CtGkL9D8g=",
+  "success": true,
+  "projectFilePath": "C:\\PROJECT AI\\Download-Picture-From-Pexel\\DownloadApp\\DownloadApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

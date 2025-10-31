@@ -47,7 +47,9 @@
             chkSelectAll = new CheckBox();
             label4 = new Label();
             label5 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)numLimit).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtQuery
@@ -68,9 +70,9 @@
             // 
             // txtSaveDir
             // 
-            txtSaveDir.Location = new Point(1232, 89);
+            txtSaveDir.Location = new Point(119, 126);
             txtSaveDir.Name = "txtSaveDir";
-            txtSaveDir.Size = new Size(299, 31);
+            txtSaveDir.Size = new Size(819, 31);
             txtSaveDir.TabIndex = 3;
             // 
             // label1
@@ -85,7 +87,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(1145, 91);
+            label3.Location = new Point(32, 128);
             label3.Name = "label3";
             label3.Size = new Size(79, 25);
             label3.TabIndex = 6;
@@ -93,7 +95,7 @@
             // 
             // btnPickDir
             // 
-            btnPickDir.Location = new Point(1537, 88);
+            btnPickDir.Location = new Point(944, 124);
             btnPickDir.Name = "btnPickDir";
             btnPickDir.Size = new Size(184, 34);
             btnPickDir.TabIndex = 7;
@@ -103,9 +105,10 @@
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(24, 126);
+            btnSearch.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnSearch.Location = new Point(1163, 86);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(622, 34);
+            btnSearch.Size = new Size(336, 71);
             btnSearch.TabIndex = 8;
             btnSearch.Text = "Tìm ảnh";
             btnSearch.UseVisualStyleBackColor = true;
@@ -123,22 +126,24 @@
             // flow
             // 
             flow.AutoScroll = true;
-            flow.Location = new Point(12, 221);
+            flow.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            flow.BackColor = Color.Silver;
+            flow.Location = new Point(12, 255);
             flow.Name = "flow";
-            flow.Size = new Size(1952, 923);
+            flow.Size = new Size(1795, 1030);
             flow.TabIndex = 10;
             // 
             // progressBar
             // 
             progressBar.Location = new Point(581, 165);
             progressBar.Name = "progressBar";
-            progressBar.Size = new Size(622, 34);
+            progressBar.Size = new Size(1226, 34);
             progressBar.TabIndex = 11;
             // 
             // lblStatus
             // 
             lblStatus.AutoSize = true;
-            lblStatus.Location = new Point(1220, 170);
+            lblStatus.Location = new Point(581, 213);
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(28, 25);
             lblStatus.TabIndex = 12;
@@ -172,9 +177,10 @@
             // 
             // advsearch
             // 
-            advsearch.Location = new Point(676, 125);
+            advsearch.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            advsearch.Location = new Point(1511, 88);
             advsearch.Name = "advsearch";
-            advsearch.Size = new Size(452, 34);
+            advsearch.Size = new Size(296, 69);
             advsearch.TabIndex = 16;
             advsearch.Text = "Tìm ảnh nâng cao";
             advsearch.UseVisualStyleBackColor = true;
@@ -203,17 +209,29 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.Red;
-            label5.Location = new Point(201, 9);
+            label5.Location = new Point(248, 9);
             label5.Name = "label5";
             label5.Size = new Size(1559, 65);
             label5.TabIndex = 19;
             label5.Text = "TẢI ẢNH TỪ PEXELS THÔNG QUA API - MADE BY: BÙI QUANG THÁI";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(23, 1);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(88, 84);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 20;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1972, 1157);
+            ClientSize = new Size(1816, 1297);
+            Controls.Add(pictureBox1);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(chkSelectAll);
@@ -237,6 +255,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Tải ảnh từ Pexels";
             ((System.ComponentModel.ISupportInitialize)numLimit).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -260,5 +279,6 @@
         private CheckBox chkSelectAll;
         private Label label4;
         private Label label5;
+        private PictureBox pictureBox1;
     }
 }

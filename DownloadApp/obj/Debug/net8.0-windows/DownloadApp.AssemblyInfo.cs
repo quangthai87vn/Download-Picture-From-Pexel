@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DownloadApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+090cb3e24a69aaf3e197424d5fa31ed38eb42716")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c4316fbc78170e3df534bd9afc2410eec837bec")]
 [assembly: System.Reflection.AssemblyProductAttribute("DownloadApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DownloadApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
